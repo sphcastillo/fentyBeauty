@@ -120,17 +120,19 @@ export default [
     },
     {
         id: "9",
-        name: "PRO FILT'R INSTANT RETOUCH SETTING POWDER",
-        image: 'https://fenty--beauty.s3.us-east-2.amazonaws.com/fentyBeauty_9_1.jpg',
+        name: "DOUBLE CHEEK’D UP FREESTYLE CREAM BLUSH DUO",
+        image: 'https://fenty--beauty.s3.us-east-2.amazonaws.com/fentyBeauty_9_01.jpg',
         images: [
-            'https://fenty--beauty.s3.us-east-2.amazonaws.com/fentyBeauty_9_1.jpg',
-            'https://fenty--beauty.s3.us-east-2.amazonaws.com/fentyBeauty_9_2.jpg',
-            'https://fenty--beauty.s3.us-east-2.amazonaws.com/fentyBeauty_9_3.webp',
-            'https://fenty--beauty.s3.us-east-2.amazonaws.com/fentyBeauty_9_4.webp',
-            'https://fenty--beauty.s3.us-east-2.amazonaws.com/fentyBeauty_9_5.jpg'
+            'https://fenty--beauty.s3.us-east-2.amazonaws.com/fentyBeauty_9_01.jpg',
+            'https://fenty--beauty.s3.us-east-2.amazonaws.com/fentyBeauty_9_02.webp',
+            'https://fenty--beauty.s3.us-east-2.amazonaws.com/fentyBeauty_9_03.jpg',
+            'https://fenty--beauty.s3.us-east-2.amazonaws.com/fentyBeauty_9_04.webp',
+            'https://fenty--beauty.s3.us-east-2.amazonaws.com/fentyBeauty_9_05.webp',
+            'https://fenty--beauty.s3.us-east-2.amazonaws.com/fentyBeauty_9_06.webp'
+
         ],
-        price: 36,
-        description: "When looking good is the name of the game, your makeup better be able to keep up. Enter Pro Filt’r Instant Retouch Setting Powder: This superfine, insanely silky loose powder sets and extends makeup wear, working all day to blur the look of pores, fines lines, and imperfections for a hyper-smooth filter that didn’t come to play—so bring on the paparazzi."
+        price: 34,
+        description: "Things gettin' real cheeky with this limited-edition duo of light-as-air cream blush shades that instantly melt into skin. Two brand-new set-exclusive shades, Peony Droppa and Mali'booze, are here for every skin tone to play with."
     },
     {
         id: "10",
