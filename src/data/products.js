@@ -9,13 +9,13 @@ export default [
             'https://fenty--beauty.s3.us-east-2.amazonaws.com/fentyBeauty_1_4.jpg',
             'https://fenty--beauty.s3.us-east-2.amazonaws.com/fentyBeauty_1_5.jpg'
         ],
-        name: "SNAP SHADOWS MIX & MATCH EYESHADOW PALETTE",
+        name: "Snap Shadows Mix & Match Eyeshadow Palette",
         price: 30,
         description: "A game-changing portable mini eyeshadow palette of 6 rich, blendable shades in a range of matte to shimmer finishes: Use 'em solo or snap together any two palettes to double your collection while keeping it perfectly compact—that’s 12 of your fave shades, all in the palm of your hand!"
     },
     {
         id: "2",
-        name: "POUTSICLE HYDRATING LIP STAIN: SUMMATIME COLLECTION",
+        name: "Poutsicle Hydrating Lip Stain: Summatime Collection",
         image: 'https://fenty--beauty.s3.us-east-2.amazonaws.com/fentyBeauty_2_1.jpg',
         images: [
             'https://fenty--beauty.s3.us-east-2.amazonaws.com/fentyBeauty_2_1.jpg',
@@ -29,7 +29,7 @@ export default [
     },
     {
         id: "3",
-        name: "PRO FILT'R SOFT MATTE LONGWEAR FOUNDATION",
+        name: "Pro Filt'r Soft Matte Longwear Foundation",
         image: 'https://fenty--beauty.s3.us-east-2.amazonaws.com/fentyBeauty_3_1.webp',
         images: [
             'https://fenty--beauty.s3.us-east-2.amazonaws.com/fentyBeauty_3_1.webp',
@@ -44,7 +44,7 @@ export default [
     },
     {
         id: "4",
-        name: "INVISIMATTE INSTANT SETTING + BLOTTING POWDER",
+        name: "Invistimatte Instant Setting + Blotting Powder",
         image: 'https://fenty--beauty.s3.us-east-2.amazonaws.com/fentyBeauty_4_6.jpg',
         images: [
             'https://fenty--beauty.s3.us-east-2.amazonaws.com/fentyBeauty_4_6.jpg',
@@ -59,7 +59,7 @@ export default [
     },
     {
         id: "5",
-        name: "MATCH STIX CONTOUR SKINSTICK",
+        name: "Match Stix Contour Skinstick",
         image: 'https://fenty--beauty.s3.us-east-2.amazonaws.com/fentyBeauty_5_1.webp',
         images: [
             'https://fenty--beauty.s3.us-east-2.amazonaws.com/fentyBeauty_5_1.webp',
@@ -75,7 +75,7 @@ export default [
     },
     {
         id: "6",
-        name: "KILLAWATT FREESTYLE HIGHLIGHTER",
+        name: "Killawatt Freestyle Highlighter",
         image: 'https://fenty--beauty.s3.us-east-2.amazonaws.com/fentyBeauty_6_1.webp',
         images: [
             'https://fenty--beauty.s3.us-east-2.amazonaws.com/fentyBeauty_6_1.webp',
@@ -89,7 +89,7 @@ export default [
     },
     {
         id: "7",
-        name: "FULL FRONTAL VOLUME, LIFT & CURL MASCARA",
+        name: "Full Frontal Volume, Lift & Curl Mascara",
         image: 'https://fenty--beauty.s3.us-east-2.amazonaws.com/fentyBeauty_7_1.jpg',
         images: [
             'https://fenty--beauty.s3.us-east-2.amazonaws.com/fentyBeauty_7_1.jpg',
@@ -104,7 +104,7 @@ export default [
     },
     {
         id: "8",
-        name: "SUN STALK'R FACE + EYE BRONZER & HIGHLIGHTER PALETTE",
+        name: "Sun Stalk'r Face + Eye Bronzer & Highlighter Palette",
         image: 'https://fenty--beauty.s3.us-east-2.amazonaws.com/fentyBeauty_8_1.webp',
         images: [
             'https://fenty--beauty.s3.us-east-2.amazonaws.com/fentyBeauty_8_1.webp',
@@ -120,7 +120,7 @@ export default [
     },
     {
         id: "9",
-        name: "DOUBLE CHEEK’D UP FREESTYLE CREAM BLUSH DUO",
+        name: "Double Cheek'd Up Freestyle Cream Blush Duo",
         image: 'https://fenty--beauty.s3.us-east-2.amazonaws.com/fentyBeauty_9_01.jpg',
         images: [
             'https://fenty--beauty.s3.us-east-2.amazonaws.com/fentyBeauty_9_01.jpg',
@@ -136,7 +136,7 @@ export default [
     },
     {
         id: "10",
-        name: "FENTY ICON VELVET LIQUID LIPSTICK",
+        name: "Fenty Icon Velvet Liquid Lipstick",
         image: 'https://fenty--beauty.s3.us-east-2.amazonaws.com/fentyBeauty_10_1.jpg',
         images: [
             'https://fenty--beauty.s3.us-east-2.amazonaws.com/fentyBeauty_10_1.jpg',
@@ -152,7 +152,7 @@ export default [
     },
     {
         id: "11",
-        name: "FLYPENCIL LONGWEAR PENCIL EYELINER",
+        name: "Flypencil Longwear Pencil Eyeliner",
         image: 'https://fenty--beauty.s3.us-east-2.amazonaws.com/fentyBeauty_11_1.jpg',
         images: [
             'https://fenty--beauty.s3.us-east-2.amazonaws.com/fentyBeauty_11_1.jpg',
@@ -167,7 +167,7 @@ export default [
     },
     {
         id: "12",
-        name: "DIAMOND BOMB ALL-OVER DIAMOND VEIL",
+        name: "Diamond Bomb All-Over Diamond Veil",
         image: 'https://fenty--beauty.s3.us-east-2.amazonaws.com/fentyBeauty_12_1.jpg',
         images: [
             'https://fenty--beauty.s3.us-east-2.amazonaws.com/fentyBeauty_12_1.jpg',
@@ -181,7 +181,7 @@ export default [
     },
     {
         id: "13",
-        name: "EAZE DROP'LIT ALL-OVER GLOW ENHANCER",
+        name: "Eaze Drop'Lit All-Over Glow Enhancer",
         image: 'https://fenty--beauty.s3.us-east-2.amazonaws.com/fentyBeauty_13_1.jpg',
         images: [
             'https://fenty--beauty.s3.us-east-2.amazonaws.com/fentyBeauty_13_1.jpg',
@@ -195,7 +195,7 @@ export default [
     },
     {
         id: "14",
-        name: "GLOSS BOMB HEAT UNIVERSAL LIP LUMINIZER + PLUMPER",
+        name: "Gloss Bomb Heat Universal Lip Luminizer + Plumper",
         image: 'https://fenty--beauty.s3.us-east-2.amazonaws.com/fentyBeauty_14_1.webp',
         images: [
             'https://fenty--beauty.s3.us-east-2.amazonaws.com/fentyBeauty_14_1.webp',
@@ -209,7 +209,7 @@ export default [
     },
     {
         id: "15",
-        name: "BROW MVP ULTRA FINE BROW PENCIL & STYLER",
+        name: "Brow MVP Ultra Fine Brow Pencil & Styler",
         image: "https://fenty--beauty.s3.us-east-2.amazonaws.com/fentyBeauty_15_1.webp",
         images: [
             'https://fenty--beauty.s3.us-east-2.amazonaws.com/fentyBeauty_15_1.webp',
@@ -224,7 +224,7 @@ export default [
     },
     {
         id: "16",
-        name: "PRO FILT'R SOFT MATTE POWDER FOUNDATION",
+        name: "Pro Filt'r Soft Matte Powder Foundation",
         image: 'https://fenty--beauty.s3.us-east-2.amazonaws.com/fentyBeauty_16_1.jpg',
         images: [
             'https://fenty--beauty.s3.us-east-2.amazonaws.com/fentyBeauty_16_1.jpg',

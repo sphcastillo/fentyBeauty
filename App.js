@@ -1,24 +1,18 @@
 import { StatusBar } from 'expo-status-bar';
-import ProductsScreen from './src/screens/ProductsScreen';
-import { StyleSheet, View} from 'react-native';
+import { View } from 'react-native';
 import ProductDetailsScreen from './src/screens/ProductDetailsScreen';
-
+import ShoppingCartScreen from "./src/screens/ShoppingCartScreen";
+import ProductsScreen from "./src/screens/ProductsScreen";
+import Navigator from './src/navigator';
 export default function App() {
   return (
-    <View style={styles.container}>
-      {/* <ProductsScreen /> */}
-      <ProductDetailsScreen />
+    <>
       <StatusBar style="auto" />
-    </View>
+      {/* <Navigator /> */}
+      {/* <ProductsScreen /> */}
+      {/* <ProductDetailsScreen /> */}
+      <ShoppingCartScreen />
+    </>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-
-});
