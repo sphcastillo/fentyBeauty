@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 import products from "../data/products";
 
 const initialState = {
-    products:  products,
+    products: products,
     selectedProduct: null,
 };
 
@@ -11,8 +11,11 @@ export const productsSlice = createSlice({
     initialState,
     reducers: {
         setSelectedProduct: ( state, action ) => {
+            // console.log("state: ", state);
+            console.log("action: ", action);
+            const productId = action.payload;
             state.selectedProduct = state.products.find(
-                (p) => p.id === action.paylod
+                (p) => p.id === productId
             )
         }
     }

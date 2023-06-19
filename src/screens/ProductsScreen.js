@@ -1,6 +1,6 @@
 import { StyleSheet, Text, View, Image, FlatList, Pressable } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
-import products from '../data/products';
+// import products from '../data/products';
 import { useDispatch, useSelector } from 'react-redux';
 import { productsSlice } from '../store/productsSlice';
 
