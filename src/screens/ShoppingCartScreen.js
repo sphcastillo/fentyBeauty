@@ -2,6 +2,31 @@ import { FlatList, StyleSheet, View, Text, Pressable } from "react-native";
 import { useSelector } from "react-redux";
 import CartListItem from "../../components/CartListItem";
 import cart from "../data/cart";
+import { selectDeliveryPrice, selectSubtotal, selectTotal } from "../store/cartSlice";
+
+const ShoppingCartTotals = () => {
+
+    const subtotal = useSelector(selectSubtotal);
+    const deliveryFee = useSelector(selectDeliveryPrice);
+    const total = useSelector(selectTotal);
+
+    return (
+        <View style={styles.totalsContainer}>
+            <View style={styles.row}>
+                <Text style={styles.text}>Subtotal</Text>
+                <Text style={styles.text}>${subtotal}.00 USD</Text>
+            </View>
+            <View style={styles.row}>
+                <Text style={styles.text}>Delivery</Text>
+                <Text style={styles.text}>${deliveryFee}.00 USD</Text>
+            </View>
+            <View style={styles.row}>
+                <Text style={styles.text}>Total</Text>
+                <Text style={styles.text}>${total}.00 USD</Text>
+            </View>
+        </View>
+    )
+}
 
 
 const ShoppingCartScreen = () => {
@@ -12,22 +37,7 @@ const ShoppingCartScreen = () => {
             <FlatList 
                 data={cartItems}
                 renderItem={({ item })  => <CartListItem cartItem={item} />}
-                ListFooterComponent={() => (
-                    <View style={styles.totalsContainer}>
-                        <View style={styles.row}>
-                            <Text style={styles.text}>Subtotal</Text>
-                            <Text style={styles.text}>100.00</Text>
-                        </View>
-                        <View style={styles.row}>
-                            <Text style={styles.text}>Delivery</Text>
-                            <Text style={styles.text}>15.00</Text>
-                        </View>
-                        <View style={styles.row}>
-                            <Text style={styles.text}>Total</Text>
-                            <Text style={styles.text}>115.00</Text>
-                        </View>
-                    </View>
-                )}
+                ListFooterComponent={ShoppingCartTotals}
             />
             <Pressable 
                 style={styles.button}
@@ -46,6 +56,7 @@ const styles = StyleSheet.create({
         paddingTop: 10,
         borderColor: "gainsboro",
         borderTopWidth: 1,
+        paddingBottom: 100
       },
       row: {
           flexDirection: 'row',
