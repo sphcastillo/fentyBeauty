@@ -71,7 +71,7 @@ export default [
             'https://fenty--beauty.s3.us-east-2.amazonaws.com/fentyBeauty_5_7.webp'
         ],
         price: 32,
-        description: "With Match Stix Matte Contour Skinsticks, you can contour in a range of shades obsessively fine-tuned and tested to look good on the full spectrum of skin tones. Plus, they come in an easy-to-use stick format that’s perfect for targeted application anywhere you want to contour. "
+        description: "With Match Stix Matte Contour Skinsticks, you can contour in a range of shades obsessively fine-tuned and tested to look good on the full spectrum of skin tones. Plus, they come in an easy-to-use stick format that’s perfect for targeted application anywhere you want to contour."
     },
     {
         id: "6",
@@ -100,7 +100,7 @@ export default [
             'https://fenty--beauty.s3.us-east-2.amazonaws.com/fentyBeauty_7_6.jpg'
         ],
         price: 24,
-        description: "The ultimate do-it-all mascara designed for a fully exposed lash look, featuring an exclusive flat-to-fat brush that instantly volumizes, lifts, lengthens, and curls. "
+        description: "The ultimate do-it-all mascara designed for a fully exposed lash look, featuring an exclusive flat-to-fat brush that instantly volumizes, lifts, lengthens, and curls."
     },
     {
         id: "8",
@@ -187,7 +187,7 @@ export default [
             'https://fenty--beauty.s3.us-east-2.amazonaws.com/fentyBeauty_13_1.jpg',
             'https://fenty--beauty.s3.us-east-2.amazonaws.com/fentyBeauty_13_2.webp',
             'https://fenty--beauty.s3.us-east-2.amazonaws.com/fentyBeauty_13_3.jpg',
-            'https://fenty--beauty.s3.us-east-2.amazonaws.com/fentyBeauty_13_4.webp,',
+            'https://fenty--beauty.s3.us-east-2.amazonaws.com/fentyBeauty_13_4.webp',
             'https://fenty--beauty.s3.us-east-2.amazonaws.com/fentyBeauty_13_5.jpg'
         ],
         price: 34,

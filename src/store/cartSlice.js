@@ -3,7 +3,7 @@ import { createSlice, createSelector } from "@reduxjs/toolkit";
 const initialState = {
     items: [],
     deliveryFee: 15,
-    freeDeliveryFrom: 200,
+    freeDeliveryFrom: 100,
 };
 
 export const cartSlice = createSlice({
