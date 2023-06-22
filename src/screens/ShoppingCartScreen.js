@@ -3,7 +3,8 @@ import { useSelector, useDispatch } from "react-redux";
 import CartListItem from "../../components/CartListItem";
 import cart from "../data/cart";
 import { selectDeliveryPrice, selectSubtotal, selectTotal, cartSlice } from "../store/cartSlice";
-import { useCreateOrderMutation } from "../store/apiSlice";
+import { useCreateOrderMutation, useCreatePaymentIntentMutation } from "../store/apiSlice";
+import { useStripe } from "@stripe/stripe-react-native";
 
 const ShoppingCartTotals = () => {
 
@@ -42,6 +43,43 @@ const ShoppingCartScreen = () => {
     const [ createOrder, { data, error, isLoading }] = useCreateOrderMutation();
 
     // console.log(error, isLoading);
+    const [createPaymentIntent] = useCreatePaymentIntentMutation();
+
+    const { initPaymentSheet, presentPaymentSheet } = useStripe();
+
+    const onCheckout = async () => {
+        const response = await createPaymentIntent({
+            amount: Math.floor(total * 100),
+        })
+
+        if (response.error){
+            Alert.alert("Payment Intent: Something went wrong");
+            return;
+        }
+
+        const initResponse = await initPaymentSheet({
+            merchantDisplayName: "sphcastillo",
+            paymentIntentClientSecret: response.data.paymentIntent,
+        });
+
+        if (initResponse.error){
+            console.log("initResponse ERROR", initResponse.error);
+            Alert.alert("Init Response: Something went wrong");
+            return;
+        }
+
+        const paymentResponse = await presentPaymentSheet();
+
+        if (paymentResponse.error){
+            Alert.alert(`Error code: ${paymentResponse.error.code}`,
+            paymentResponse.error.message
+            );
+            return;
+        }
+
+        onCreateOrder();
+    }
+
 
     const onCreateOrder = async () => {
         const result = await createOrder({
@@ -75,7 +113,7 @@ const ShoppingCartScreen = () => {
             />
             <Pressable 
                 style={styles.button}
-                onPress={onCreateOrder}
+                onPress={onCheckout}
             >
             <Text style={styles.buttonText}>
                 Checkout

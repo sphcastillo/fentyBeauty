@@ -29,6 +29,13 @@ export const apiSlice = createApi({
                 method: 'POST',
                 body: data,
             })
+        }),
+        createPaymentIntent: builder.mutation({
+            query: (data) => ({
+                url: 'payments/intents',
+                method: 'POST',
+                body: data,
+            })
         })
     }),
 });

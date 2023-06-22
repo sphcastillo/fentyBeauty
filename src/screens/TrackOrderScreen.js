@@ -13,6 +13,7 @@ const TrackOrderScreen = () => {
                 value={ref}
                 onChangeText={setRef}
                 placeholder="Your order reference"
+                autoCapitalize="none"
             />
 
             {isLoading && <ActivityIndicator />}
