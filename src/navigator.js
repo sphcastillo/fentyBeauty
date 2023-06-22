@@ -3,8 +3,9 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import ProductDetailsScreen from "./screens/ProductDetailsScreen";
 import ProductsScreen from "./screens/ProductsScreen";
 import ShoppingCartScreen from "./screens/ShoppingCartScreen";
+import TrackOrderScreen from "./screens/TrackOrderScreen";
 import { Pressable, Text } from "react-native";
-import { FontAwesome5 }  from '@expo/vector-icons';
+import { FontAwesome5, MaterialCommunityIcons }  from '@expo/vector-icons';
 import { useSelector } from "react-redux";
 import { selectNumberOfItems } from "./store/cartSlice";
 
@@ -29,6 +30,14 @@ const Navigator = () => {
                                 <FontAwesome5  name="shopping-cart" size={18} color="grey"/>
                                 <Text style={{ marginLeft: 5, fontWeight: '500' }}>{numberOfItems}</Text>
                             </Pressable>
+                        ),
+                        headerLeft: () => (
+                            <MaterialCommunityIcons 
+                                onPress={() => navigation.navigate('Track Order')}
+                                name="truck-delivery"
+                                size={22}
+                                color="gray"
+                            />
                         )
                     })}
                 />
@@ -38,6 +47,7 @@ const Navigator = () => {
                     component={ProductDetailsScreen}
                 />
                 <Stack.Screen name="Shopping Cart" component={ShoppingCartScreen}/>
+                <Stack.Screen name="Track Order" component={TrackOrderScreen} />
             </Stack.Navigator>
 
         </NavigationContainer>
