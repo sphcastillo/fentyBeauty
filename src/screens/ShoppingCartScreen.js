@@ -1,8 +1,9 @@
-import { FlatList, StyleSheet, View, Text, Pressable } from "react-native";
-import { useSelector } from "react-redux";
+import { FlatList, StyleSheet, View, Text, Pressable, Alert, ActivityIndicator } from "react-native";
+import { useSelector, useDispatch } from "react-redux";
 import CartListItem from "../../components/CartListItem";
 import cart from "../data/cart";
-import { selectDeliveryPrice, selectSubtotal, selectTotal } from "../store/cartSlice";
+import { selectDeliveryPrice, selectSubtotal, selectTotal, cartSlice } from "../store/cartSlice";
+import { useCreateOrderMutation } from "../store/apiSlice";
 
 const ShoppingCartTotals = () => {
 
@@ -31,7 +32,40 @@ const ShoppingCartTotals = () => {
 
 const ShoppingCartScreen = () => {
 
+    const subtotal = useSelector(selectSubtotal);
+    const deliveryFee = useSelector(selectDeliveryPrice);
+    const total = useSelector(selectTotal);
+    const dispatch = useDispatch();
+
     const cartItems = useSelector((state) => state.cart.items);
+
+    const [ createOrder, { data, error, isLoading }] = useCreateOrderMutation();
+
+    // console.log(error, isLoading);
+
+    const onCreateOrder = async () => {
+        const result = await createOrder({
+            items: cartItems,
+            subtotal,
+            deliveryFee,
+            total,
+            customer: {
+                name: "Beyonce Knowles",
+                address: "Los Angeles, California",
+                email: "queenbey@beyonce.com"
+            }
+        });
+
+        if(result.data?.status === 'OK'){
+            Alert.alert(
+                'Order has been submitted',
+                `Your order reference is: ${result.data.data.ref}`
+            );
+            dispatch(cartSlice.actions.clear());
+        }
+    }
+
+
     return (
         <>
             <FlatList 
@@ -41,9 +75,11 @@ const ShoppingCartScreen = () => {
             />
             <Pressable 
                 style={styles.button}
+                onPress={onCreateOrder}
             >
             <Text style={styles.buttonText}>
                 Checkout
+                {isLoading && <ActivityIndicator />}
             </Text>
             </Pressable>
         </>
