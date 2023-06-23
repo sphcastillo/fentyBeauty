@@ -8,6 +8,7 @@ import { Pressable, Text } from "react-native";
 import { FontAwesome5, MaterialCommunityIcons }  from '@expo/vector-icons';
 import { useSelector } from "react-redux";
 import { selectNumberOfItems } from "./store/cartSlice";
+import AuthScreen from "./screens/AuthScreen";
 
 const Stack = createNativeStackNavigator();
 
@@ -18,6 +19,9 @@ const Navigator = () => {
             <Stack.Navigator
                 screenOptions={{ contentStyle: { backgroundColor: 'white' } }}
             >
+                <Stack.Screen 
+                    options={{ headerShown: false }}
+                name="Auth" component={AuthScreen}/>
                 <Stack.Screen 
                     name="Products"
                     component={ProductsScreen}
