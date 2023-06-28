@@ -19,9 +19,11 @@ const Navigator = () => {
             <Stack.Navigator
                 screenOptions={{ contentStyle: { backgroundColor: 'white' } }}
             >
-                <Stack.Screen 
+                {/* <Stack.Screen 
                     options={{ headerShown: false }}
-                name="Auth" component={AuthScreen}/>
+                    name="Auth" 
+                    component={AuthScreen}
+                /> */}
                 <Stack.Screen 
                     name="Products"
                     component={ProductsScreen}

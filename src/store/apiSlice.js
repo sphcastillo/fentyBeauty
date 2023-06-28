@@ -36,7 +36,14 @@ export const apiSlice = createApi({
                 method: 'POST',
                 body: data,
             })
-        })
+        }),
+        // login: builder.mutation({
+        //     query: credentials => ({
+        //         url: "auth",
+        //         method: 'POST',
+        //         body: { ...credentials }
+        //     })
+        // })
     }),
 });
 
@@ -45,5 +52,6 @@ export const {
     useGetProductQuery,
     useCreateOrderMutation,
     useGetOrderQuery,
-    useCreatePaymentIntentMutation 
+    useCreatePaymentIntentMutation,
+    // useLoginMutation 
 } = apiSlice;

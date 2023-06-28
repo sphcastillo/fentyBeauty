@@ -5,21 +5,26 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'flex-end',
+    backgroundColor: "#e0beb1"
+  },
+  svg: {
+    height: 100
   },
   button: {
-    backgroundColor: 'rgba(123,104,238,0.8)',
-    height: 55,
+    height: 48,
     alignItems: 'center',
     justifyContent: 'center',
     borderRadius: 35,
-    marginHorizontal: 20,
-    marginVertical: 10,
+    marginHorizontal: 96,
+    marginVertical: 12,
     borderWidth: 1,
-    borderColor: 'white'
+    borderColor: 'white',
+    backgroundColor: 'black'
   },
   buttonText: {
-    fontSize: 20,
+    fontSize: 17,
     fontWeight: '600',
+    // color: "black",
     color: 'white',
     letterSpacing: 0.5
   },
@@ -37,7 +42,8 @@ const styles = StyleSheet.create({
     paddingLeft: 10
   },
   formButton: {
-    backgroundColor: 'rgba(123,104,238,0.8)',
+    // backgroundColor: 'rgba(123,104,238,0.8)',
+    backgroundColor: 'black',
     height: 55,
     alignItems: 'center',
     justifyContent: 'center',

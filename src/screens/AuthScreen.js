@@ -21,7 +21,7 @@ import Animated, {
   withSpring
 } from "react-native-reanimated";
 
-export default function AuthScreen() {
+const AuthScreen = () => {
   const { height, width } = Dimensions.get("window");
   const imagePosition = useSharedValue(1);
   const formButtonScale = useSharedValue(1);
@@ -31,7 +31,7 @@ export default function AuthScreen() {
     const interpolation = interpolate(
       imagePosition.value,
       [0, 1],
-      [-height / 2, 0]
+      [-height/5 / 1, 0]
     );
     return {
       transform: [
@@ -92,16 +92,18 @@ export default function AuthScreen() {
   return (
     <Animated.View style={styles.container}>
       <Animated.View style={[StyleSheet.absoluteFill, imageAnimatedStyle]}>
-        <Svg height={height + 100} width={width}>
+        {/* <Svg height={height + 100} width={width}> */}
+        <Svg style={styles.svg}>
           <ClipPath id="clipPathId">
             <Ellipse cx={width / 2} rx={height} ry={height + 100} />
           </ClipPath>
           <Image
-            width={width + 100}
-            href={require("../../assets/icon.png")}
-            height={height + 100}
-            preserveAspectRatio="xMidYMid slice"
+            source={require("../images/rihanna3.jpg")}
+            // width={width + 100}
+            // height={height + 100}
+            // preserveAspectRatio="xMidYMid slice"
             clipPath="url(#clipPathId)"
+            style={{ justifyContent: 'center', alignItems: 'center'}}
           />
         </Svg>
         <Animated.View
@@ -151,3 +153,5 @@ export default function AuthScreen() {
     </Animated.View>
   );
 }
+
+export default AuthScreen;
